@@ -57,7 +57,7 @@ public class Calculator {
             if (numbers[i] <= 1) {
                 compositeNumbers++;
             } else {
-                for (int divider = 2;divider <= Math.sqrt(numbers[i]);divider++) {
+                for (int divider = 2; divider <= Math.sqrt(numbers[i]); divider++) {
                     if (numbers[i] % divider == 0) {
                         compositeNumbers++;
                         break;
