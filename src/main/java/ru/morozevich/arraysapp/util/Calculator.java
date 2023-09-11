@@ -1,6 +1,8 @@
+package ru.morozevich.arraysapp.util;
+
 public class Calculator {
 
-    static int calculateEven(int[] numbers) {
+    public static int countEven(int[] numbers) {
         int evenNumbers = 0;
         for (int i = 0; i < 10; i++) {
             if (numbers[i] % 2 == 0) {
@@ -10,7 +12,7 @@ public class Calculator {
         return evenNumbers;
     }
 
-    static int calculateOdd(int[] numbers) {
+    public static int countOdd(int[] numbers) {
         int oddNumbers = 0;
         for (int i = 0; i < 10; i++) {
             if (numbers[i] % 2 == 1 || numbers[i] % 2 == -1) {
@@ -20,7 +22,7 @@ public class Calculator {
         return oddNumbers;
     }
 
-    static int calculateSum(int[] numbers) {
+    public static int calculateSum(int[] numbers) {
         int sum = 0;
         for (int i = 0; i < 10; i++) {
             sum += numbers[i];
@@ -28,7 +30,7 @@ public class Calculator {
         return sum;
     }
 
-    static int calculateDiffEvenOdd(int[] numbers) {
+    public static int calculateDiffEvenOdd(int[] numbers) {
         int sumEvenNum = 0;
         int sumOddNum = 0;
         for (int i = 0; i < 10; i++) {
@@ -41,7 +43,7 @@ public class Calculator {
         return sumEvenNum - sumOddNum;
     }
 
-    static int calculateZeros(int[] numbers) {
+    public static int countZeros(int[] numbers) {
         int zeroQuantity = 0;
         for (int i = 0; i < 10; i++) {
             if (numbers[i] == 0) {
@@ -51,7 +53,7 @@ public class Calculator {
         return zeroQuantity;
     }
 
-    static int calculatePrimeNumbers(int[] numbers) {
+    public static int countPrimeNumbers(int[] numbers) {
         int compositeNumbers = 0;
         for (int i = 0; i < 10; i++) {
             if (numbers[i] <= 1) {
@@ -65,7 +67,7 @@ public class Calculator {
                 }
             }
         }
-        return 10 - compositeNumbers;
+        return numbers.length - compositeNumbers;
     }
 }
 
