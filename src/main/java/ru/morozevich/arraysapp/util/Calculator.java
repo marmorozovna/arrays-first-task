@@ -4,7 +4,7 @@ public class Calculator {
 
     public static int countEven(int[] numbers) {
         int evenNumbers = 0;
-        for (int i = 0; i < 10; i++) {
+        for (int i = 0; i < numbers.length; i++) {
             if (numbers[i] % 2 == 0) {
                 evenNumbers++;
             }
@@ -14,7 +14,7 @@ public class Calculator {
 
     public static int countOdd(int[] numbers) {
         int oddNumbers = 0;
-        for (int i = 0; i < 10; i++) {
+        for (int i = 0; i < numbers.length; i++) {
             if (numbers[i] % 2 == 1 || numbers[i] % 2 == -1) {
                 oddNumbers++;
             }
@@ -24,7 +24,7 @@ public class Calculator {
 
     public static int calculateSum(int[] numbers) {
         int sum = 0;
-        for (int i = 0; i < 10; i++) {
+        for (int i = 0; i < numbers.length; i++) {
             sum += numbers[i];
         }
         return sum;
@@ -33,7 +33,7 @@ public class Calculator {
     public static int calculateDiffEvenOdd(int[] numbers) {
         int sumEvenNum = 0;
         int sumOddNum = 0;
-        for (int i = 0; i < 10; i++) {
+        for (int i = 0; i < numbers.length; i++) {
             if (i % 2 == 0) {
                 sumEvenNum += numbers[i];
             } else {
@@ -45,7 +45,7 @@ public class Calculator {
 
     public static int countZeros(int[] numbers) {
         int zeroQuantity = 0;
-        for (int i = 0; i < 10; i++) {
+        for (int i = 0; i < numbers.length; i++) {
             if (numbers[i] == 0) {
                 zeroQuantity++;
             }
@@ -55,7 +55,7 @@ public class Calculator {
 
     public static int countPrimeNumbers(int[] numbers) {
         int compositeNumbers = 0;
-        for (int i = 0; i < 10; i++) {
+        for (int i = 0; i < numbers.length; i++) {
             if (numbers[i] <= 1) {
                 compositeNumbers++;
             } else {
